@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="400" height="400" viewBox="0 0 400 400" xml:space="preserve">
+<desc>Created with Fabric.js 3.6.2</desc>
+<defs>
+</defs>
+<g transform="matrix(0.78 0 0 0.78 200 200)"  >
+<rect style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;"  x="-128" y="-128" rx="0" ry="0" width="256" height="256" />
+</g>
+<g transform="matrix(0.78 0 0 0.78 202.99 197.01)"  >
+<path style="stroke: rgb(0,0,0); stroke-width: 16; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;"  transform=" translate(-131.83, -124.17)" d="M 92.5 124.8 a 83.6 83.6 0 0 0 39 38.9 a 8 8 0 0 0 7.9 -0.6 l 25 -16.7 a 7.9 7.9 0 0 1 7.6 -0.7 l 46.8 20.1 a 7.9 7.9 0 0 1 4.8 8.3 A 48 48 0 0 1 176 216 A 136 136 0 0 1 40 80 A 48 48 0 0 1 81.9 32.4 a 7.9 7.9 0 0 1 8.3 4.8 l 20.1 46.9 a 8 8 0 0 1 -0.6 7.5 L 93 117 A 8 8 0 0 0 92.5 124.8 Z" stroke-linecap="round" />
+</g>
+</svg>

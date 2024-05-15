@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock title %}
+
+
+{% block main %}
+
+<main class="main">
+    <div class="container">
+        <div class="favorites">
+
+            <div class="favorites__txt">
+                {% if products %}
+                <h3 class="favorites__title">Моё избранное</h3>
+                <span class="favorites__title-count">предметов: <span></span></span>
+                {% else %}
+                <h3 class="favorites__title">У вас нет избранных товаров</h3>
+                {% endif %}
+            </div>
+            <div class="products__content">
+                {% for product in products %}
+                {% include 'ne_ximik/components/_card_product.html' %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock main %}

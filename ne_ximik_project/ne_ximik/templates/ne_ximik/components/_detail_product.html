@@ -1,0 +1,49 @@
+{% load static %}
+
+{% load ne_ximik_tags %}
+{% get_tastes product.model_product as tastes %}
+
+<div class="product__slider-parameters">
+
+
+    <h1 class="product__title">{{ product.title }}</h1>
+    <span class="product__categories">{{ product.category }}</span>
+    <div class="product__links">
+        <h2 class="product__links-price"><span>{% get_normal_price product.price %}</span> сум</h2>
+        <a href="#!" class="product__links-buy">Купить</a>
+        <a href="{% url 'save_favorite' product.slug %}" class="products__item-heart product__links-add">
+            <span></span></a>
+    </div>
+
+
+    <!-- Вкусы   -->
+    <ul class="paremeters__list">
+        <li class="paremetes__list-item">
+            <h3 class="paremeters__list-title">Вкусы</h3>
+            {% for taste in tastes %}
+            <a href="{% url 'product_taste' product.model_product taste %}" class="">
+                <div class="">{{ taste }}</div>
+            </a>
+            {% endfor %}
+        </li>
+
+        <ul class="paremetes__list-item">
+            <li class="paremetes__list-item">
+                <h3 class="paremeters__list-title">Производство</h3>
+                <div class="">{{ product.production }}</div>
+            </li>
+        </ul>
+
+        <ul class="paremetes__list-item">
+            <li class="paremetes__list-item">
+                <h3 class="paremeters__list-title">Бренд</h3>
+                <div class="">{{ product.brand.title }}</div>
+            </li>
+        </ul>
+
+    </ul>
+
+
+    <!-- Описание  -->
+    <p class="product__descr"><span class="product__descr-title">Описание</span>{{ product.description }}</p>
+</div>

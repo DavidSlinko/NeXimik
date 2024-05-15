@@ -1,0 +1,53 @@
+{% load static %}
+<nav class="nav">
+    <div class="container _nav">
+        <div class="nav__content">
+            <div class="nav__content-bars">
+                <h2 class="nav__title">Меню</h2>
+                <a href="#!" class="nav__bars-exit">
+                    <img src="{% static 'digital/assets/icons/exit.svg' %}" alt="exit">
+                </a>
+            </div>
+            <ul class="nav__list">
+                <li>
+                    <a href="index.html" class="nav__list-links">
+                        <img src="{% static 'digital/assets/icons/home.svg' %}" alt="home">
+                        Главная
+                    </a>
+                </li>
+                <li>
+                    <a href="./about.html" class="nav__list-links">
+                        <img src="{% static 'digital/assets/icons/aboute.svg' %}" alt="aboute">
+                        О нас
+                    </a>
+                </li>
+                <li>
+                    <a href="#!" class="nav__list-links">
+                        <img src="{% static 'digital/assets/icons/contacts.svg' %}" alt="contacts">
+                        Контакты
+                    </a>
+                </li>
+            </ul>
+            <!-- /.nav__list -->
+            <ul class="nav__contacts">
+
+                {% if not request.user.is_authenticated %}
+
+                <li><a href="{% url 'login' %}" class="nav__contacts-links">Вход</a></li>
+
+                <li><a href="{% url 'register' %}" class="nav__contacts-links">Регистрация</a></li>
+
+                {% else %}
+
+                <a href="{% url 'logout' %}" class="nav__contacts-links">Выход</a>
+
+                {% endif %}
+
+            </ul>
+            <!-- /.nav__contacts -->
+
+        </div>
+        <!-- /.nav__content -->
+    </div>
+
+</nav>
